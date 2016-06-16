@@ -1,0 +1,525 @@
+1,26,solved
+2,194,not solved
+3,214,not solved
+4,228,solved
+5,334,not solved
+6,343,solved
+7,483,solved
+8,494,solved
+9,647,not solved
+10,744,solved
+11,895,solved
+12,1056,solved
+13,1113,not solved
+14,1155,solved
+15,1296,solved
+16,1307,not solved
+17,1312,solved
+18,1355,solved
+19,1355,solved
+20,1355,not solved
+21,1372,not solved
+22,1372,not solved
+23,1372,solved
+24,1433,not solved
+25,1539,solved
+26,1644,solved
+27,1767,solved
+28,1825,not solved
+29,1997,solved
+30,2087,not solved
+31,2145,not solved
+32,2226,solved
+33,2410,solved
+34,2528,solved
+35,2621,not solved
+36,2720,solved
+37,2720,not solved
+38,2730,not solved
+39,2848,not solved
+40,2984,solved
+41,3047,solved
+42,3108,solved
+43,3115,not solved
+44,3236,solved
+45,3456,solved
+46,3513,solved
+47,3547,not solved
+48,3665,not solved
+49,3665,not solved
+50,3769,not solved
+51,3879,not solved
+52,3951,solved
+53,4068,solved
+54,4167,not solved
+55,4197,solved
+56,4218,solved
+57,4252,not solved
+58,4381,solved
+59,4412,not solved
+60,4445,solved
+61,4464,not solved
+62,4530,not solved
+63,4589,solved
+64,4707,not solved
+65,4749,solved
+66,4796,not solved
+67,4879,solved
+68,5017,not solved
+69,5157,not solved
+70,5195,solved
+71,5195,not solved
+72,5263,not solved
+73,5498,not solved
+74,5815,solved
+75,5853,not solved
+76,5903,not solved
+77,5932,solved
+78,6130,not solved
+79,6176,solved
+80,6280,solved
+81,6499,not solved
+82,6525,solved
+83,6741,solved
+84,6741,solved
+85,6765,solved
+86,6928,not solved
+87,7348,not solved
+88,7348,solved
+89,7448,not solved
+90,7723,solved
+91,7766,not solved
+92,7775,solved
+93,7844,solved
+94,7970,not solved
+95,7979,not solved
+96,8112,solved
+97,8204,not solved
+98,8204,not solved
+99,8218,solved
+100,8400,not solved
+101,8441,solved
+102,8444,not solved
+103,8585,solved
+104,8620,solved
+105,8805,solved
+106,8937,not solved
+107,9080,not solved
+108,9184,solved
+109,9305,solved
+110,9403,not solved
+111,9464,solved
+112,9636,not solved
+113,9823,solved
+114,9882,not solved
+115,9970,not solved
+116,10046,not solved
+117,10093,not solved
+118,10096,solved
+119,10144,solved
+120,10224,not solved
+121,10339,not solved
+122,10474,not solved
+123,10537,not solved
+124,10668,solved
+125,10669,not solved
+126,10711,not solved
+127,10800,solved
+128,10845,not solved
+129,10876,not solved
+130,11057,solved
+131,11173,not solved
+132,11209,solved
+133,11230,solved
+134,11290,solved
+135,11390,solved
+136,11452,solved
+137,11886,not solved
+138,11934,solved
+139,11962,not solved
+140,11968,solved
+141,12093,solved
+142,12095,not solved
+143,12157,solved
+144,12224,not solved
+145,12324,not solved
+146,12325,solved
+147,12329,not solved
+148,12436,not solved
+149,12464,solved
+150,12464,not solved
+151,12565,solved
+152,12682,solved
+153,12777,not solved
+154,12844,not solved
+155,13216,not solved
+156,13232,not solved
+157,13251,not solved
+158,13407,solved
+159,13435,solved
+160,13527,solved
+161,13623,solved
+162,13643,not solved
+163,13653,not solved
+164,13695,not solved
+165,13735,solved
+166,13797,solved
+167,13931,not solved
+168,14091,not solved
+169,14132,not solved
+170,14363,not solved
+171,14672,not solved
+172,14725,not solved
+173,14820,solved
+174,14867,not solved
+175,14993,not solved
+176,15131,not solved
+177,15394,not solved
+178,15447,solved
+179,15514,not solved
+180,15818,not solved
+181,15980,solved
+182,16231,solved
+183,16284,not solved
+184,16700,not solved
+185,16729,solved
+186,16776,solved
+187,16937,solved
+188,16954,solved
+189,17100,solved
+190,17175,not solved
+191,17201,not solved
+192,17343,solved
+193,17503,not solved
+194,17513,not solved
+195,17590,not solved
+196,17919,not solved
+197,18062,not solved
+198,18101,solved
+199,18151,not solved
+200,18408,not solved
+201,18421,not solved
+202,18437,not solved
+203,18527,solved
+204,18630,solved
+205,18797,not solved
+206,18963,not solved
+207,19052,not solved
+208,19064,solved
+209,19064,not solved
+210,19064,solved
+211,19320,solved
+212,19612,not solved
+213,19695,not solved
+214,19740,solved
+215,19794,solved
+216,19919,solved
+217,19989,not solved
+218,20004,solved
+219,20201,solved
+220,20207,solved
+221,20257,not solved
+222,20434,solved
+223,20465,solved
+224,20522,solved
+225,20546,solved
+226,20826,not solved
+227,20953,not solved
+228,21040,solved
+229,21040,solved
+230,21267,not solved
+231,21316,not solved
+232,21479,solved
+233,21501,not solved
+234,21618,solved
+235,21646,solved
+236,21692,not solved
+237,21749,solved
+238,21776,solved
+239,21776,solved
+240,21892,solved
+241,21930,not solved
+242,21961,solved
+243,22056,not solved
+244,22056,not solved
+245,22184,not solved
+246,22184,not solved
+247,22299,not solved
+248,22338,solved
+249,22384,solved
+250,22794,not solved
+251,23128,solved
+252,23274,solved
+253,23284,not solved
+254,23540,not solved
+255,23540,solved
+256,23572,not solved
+257,23731,not solved
+258,24254,solved
+259,24455,not solved
+260,24510,solved
+261,24685,not solved
+262,24801,not solved
+263,25046,not solved
+264,25078,not solved
+265,25108,solved
+266,25255,not solved
+267,25306,solved
+268,25341,solved
+269,25373,not solved
+270,25399,solved
+271,25645,solved
+272,25701,not solved
+273,25769,solved
+274,25794,not solved
+275,26012,not solved
+276,26012,not solved
+277,26012,not solved
+278,26015,not solved
+279,26017,not solved
+280,26132,not solved
+281,26193,not solved
+282,26196,not solved
+283,26312,not solved
+284,26312,solved
+285,26370,not solved
+286,26443,solved
+287,26454,solved
+288,26533,not solved
+289,26602,not solved
+290,27131,not solved
+291,27178,not solved
+292,27182,solved
+293,27237,solved
+294,27297,not solved
+295,27334,not solved
+296,27334,not solved
+297,27360,solved
+298,27415,not solved
+299,27415,not solved
+300,27804,solved
+301,27940,not solved
+302,28021,not solved
+303,28071,not solved
+304,28155,solved
+305,28354,not solved
+306,28737,solved
+307,28877,solved
+308,28907,solved
+309,29009,solved
+310,29053,solved
+311,29058,not solved
+312,29101,not solved
+313,29102,not solved
+314,29107,not solved
+315,29184,solved
+316,29237,solved
+317,29280,solved
+318,29413,not solved
+319,29474,not solved
+320,29511,solved
+321,29691,solved
+322,29778,not solved
+323,29779,not solved
+324,29801,not solved
+325,29942,solved
+326,30008,not solved
+327,30163,solved
+328,30167,not solved
+329,30231,not solved
+330,30342,solved
+331,30370,solved
+332,30540,solved
+333,30564,solved
+334,30636,not solved
+335,30717,solved
+336,30879,solved
+337,30992,solved
+338,31038,solved
+339,31112,solved
+340,31121,not solved
+341,31227,not solved
+342,31265,solved
+343,31398,solved
+344,31456,not solved
+345,31456,not solved
+346,31491,not solved
+347,31526,solved
+348,31841,not solved
+349,32249,not solved
+350,32627,solved
+351,32627,not solved
+352,32682,solved
+353,32785,not solved
+354,32813,solved
+355,32926,not solved
+356,33161,not solved
+357,33215,solved
+358,33264,not solved
+359,33586,not solved
+360,33886,not solved
+361,33914,solved
+362,33991,not solved
+363,34046,not solved
+364,34097,not solved
+365,34139,not solved
+366,34148,solved
+367,34298,solved
+368,34412,solved
+369,34498,solved
+370,34498,solved
+371,34834,not solved
+372,34979,not solved
+373,35035,not solved
+374,35048,not solved
+375,35058,solved
+376,35186,not solved
+377,35194,solved
+378,35201,not solved
+379,35206,solved
+380,35206,solved
+381,35338,not solved
+382,35424,solved
+383,35897,solved
+384,35976,solved
+385,36047,not solved
+386,36249,not solved
+387,36255,not solved
+388,36303,solved
+389,36368,solved
+390,36399,not solved
+391,36630,not solved
+392,37006,not solved
+393,37482,not solved
+394,37549,not solved
+395,37724,solved
+396,37842,solved
+397,38007,solved
+398,38118,not solved
+399,38190,solved
+400,38292,solved
+401,38429,not solved
+402,38431,solved
+403,38695,not solved
+404,38734,solved
+405,38943,solved
+406,39057,solved
+407,39085,solved
+408,39087,not solved
+409,39101,not solved
+410,39368,solved
+411,39674,solved
+412,39797,solved
+413,39810,not solved
+414,39810,solved
+415,39899,solved
+416,40036,solved
+417,40080,not solved
+418,40187,solved
+419,40247,solved
+420,40305,not solved
+421,40335,not solved
+422,40490,not solved
+423,40512,not solved
+424,40885,not solved
+425,40898,not solved
+426,40906,not solved
+427,40988,solved
+428,41028,solved
+429,41057,not solved
+430,41175,solved
+431,41252,solved
+432,41688,solved
+433,41688,not solved
+434,41729,solved
+435,41760,solved
+436,41799,not solved
+437,41961,solved
+438,42048,not solved
+439,42106,not solved
+440,42106,solved
+441,42233,not solved
+442,42249,not solved
+443,42320,solved
+444,42390,solved
+445,42396,not solved
+446,42558,not solved
+447,42651,solved
+448,42845,not solved
+449,43058,solved
+450,43089,not solved
+451,43188,not solved
+452,43274,not solved
+453,43442,solved
+454,43546,solved
+455,43606,solved
+456,43658,not solved
+457,43684,solved
+458,43739,solved
+459,43775,not solved
+460,43966,not solved
+461,44215,solved
+462,44227,not solved
+463,44361,solved
+464,44383,not solved
+465,44383,solved
+466,44427,solved
+467,44489,not solved
+468,44530,solved
+469,44582,not solved
+470,44819,solved
+471,44877,not solved
+472,44959,solved
+473,45185,solved
+474,45380,not solved
+475,45525,not solved
+476,45624,solved
+477,45682,solved
+478,45809,not solved
+479,45990,not solved
+480,45993,solved
+481,46006,not solved
+482,46011,not solved
+483,46090,solved
+484,46113,not solved
+485,46207,solved
+486,46382,not solved
+487,46391,solved
+488,46437,solved
+489,46437,not solved
+490,46566,not solved
+491,46662,solved
+492,46864,solved
+493,46940,solved
+494,46989,not solved
+495,47184,solved
+496,47396,solved
+497,47397,solved
+498,47410,solved
+499,47508,solved
+500,47545,solved
+501,47568,not solved
+502,47580,not solved
+503,47580,not solved
+504,47667,not solved
+505,47709,not solved
+506,47857,not solved
+507,47934,solved
+508,48061,not solved
+509,48193,solved
+510,48305,solved
+511,48367,not solved
+512,48406,not solved
+513,48672,not solved
+514,48918,not solved
+515,48943,not solved
+516,49153,solved
+517,49163,not solved
+518,49173,solved
+519,49375,solved
+520,49387,not solved
+521,49457,solved
+522,49506,not solved
+523,49507,not solved
+524,49575,not solved
+525,49768,solved
