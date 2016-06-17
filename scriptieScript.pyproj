@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4393d4fc-be02-4d46-bcf8-5045550366d5}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>createOrderScript.py</StartupFile>
+    <StartupFile>createEvaluationScript.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>

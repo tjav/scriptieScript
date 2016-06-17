@@ -1,21 +1,29 @@
 from createPathsScript import eventlog
-from createPathsScript import persons
+from createPeopleScript import persons
+from loyalPersonScript import LoyalPerson
 import csv
 
 loyalpersons = []
-
-for i in range(len(persons)):
-    pRecord = persons[i]
-    pId = pRecord.nr
-    findLoyal(pId)
+rowNumber = 0
 
 def findLoyal(personId):
-    rowNumber = 1
-    event = [each for each in eventlog if eventlog.nameID == personId]
-    
+    global rowNumber
+    event = [each for each in eventlog if each.nameID == personId] # select the event of the person
+    j = 0
     for i in reversed(event):
-        if event.state == 's6' and event[i+1] is not 's8':
-            loyalpersons.append(loyalpersons(rowNumber, personId, 'Loyal'))
+        j += 1
+        if i.state == 's6'or i.state == 's4':
+            #print (event)
+            eventNext = event[j] #get next event
+            #print (eventNext)
+            if eventNext.state == 's2':
+                loyalpersons.append(LoyalPerson(rowNumber, personId, 'Loyal'))
+                rowNumber += 1
+        
+
+# go through all persons
+for pId in range(len(persons)): 
+    findLoyal(pId)
 
 # loyal persons to csv
 lcsv = csv.writer(open("OutputCSV/loyalpersons.csv","w"), delimiter='\n',quoting=csv.QUOTE_MINIMAL)

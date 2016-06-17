@@ -2,9 +2,12 @@ import random
 import csv
 from createPathsScript import eventlog
 from createPeopleScript import persons
+from createQuoteScript import quotes
+from createOrderScript import orders
+from findLoyalPersonScript import loyalpersons
 from evaluationScript import Evaluation
 from issuesScript import Issues
-from createQuoteScript import quotes
+
 
 evaluation = []
 issues = []
@@ -13,7 +16,7 @@ issueNumber = 0
 
 
 #creation of evaluations
-def createEvaluation(personID, state, work, gender, issue):
+def createEvaluation(personID, state, work, gender, issue, loyals):
     takes = random.randint(0,99)
     rc = random.randint(0,3)
     r = random.randint(1,10)
@@ -22,28 +25,33 @@ def createEvaluation(personID, state, work, gender, issue):
     re = r
     
     if work:
-        rnps -= 1
-        rces += 2
-        re += 1
+        rnps    -= 1
+        rces    += 2
+        re      += 1
     
     if gender == 'female':
-        rnps += 2
-        rces += 1
-        re += 1
+        rnps    += 2
+        rces    += 1
+        re      += 1
+
+    if loyals == ['Loyal']:
+        rnps    += 4
+        rces    += 4
+        re      += 4
         
     if rc == 0:
-        rnps += 1
-        rces += 2
-        re += 1
+        rnps    += 1
+        rces    += 2
+        re      += 1
     elif rc == 1:
-        rces -= 2
+        rces    -= 2
         
     if state == 's7' and issue:
-        rnps += 2
-        rces += 1
+        rnps    += 2
+        rces    += 1
     elif state == 's7':
-        rnps -= 3
-        rces -= 1
+        rnps    -= 3
+        rces    -= 1
     
     
     if rnps > 10: rnps = 10
@@ -91,11 +99,16 @@ def searchEventlog(state):
 
 # search through persons
 def searchPersons(nr, state, issue):
+    #get info of from the person
     person = persons[nr]
     comp = person.company
     gender = person.gender
-    if comp and gender == 'male': createEvaluation(nr, state, True, gender, issue)
-    else: createEvaluation(nr, state, False, gender,issue)
+
+    # find if loyal
+    loyals = [each.loyalState for each in loyalpersons if each.personID == nr]
+
+    if comp: createEvaluation(nr, state, True, gender, issue, loyals)
+    else: createEvaluation(nr, state, False, gender,issue, loyals)
 
 
 def createIssueLog(name, issue):

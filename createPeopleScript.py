@@ -29,7 +29,7 @@ def makePeople(number):
             c = 'NULL'
         persons.append(Person(each, f + " " + l, f + "." + l + e ,c,giveRandom(gender),giveRandom(locations)))
 
-makePeople(50)
+makePeople(60000)
 print (len(persons))
 
 ## evaluations to csv
