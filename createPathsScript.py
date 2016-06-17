@@ -46,9 +46,9 @@ def stateFive(person):
     createEvent(person.nr, 's5')
     #determine next step
     r = random.randint(0,100)
-    if r <= 15: stateThree(person)
-    elif r <= 45: stateFive(person)
-    elif r <= 95: stateSix(person)
+    if r <= 20: stateThree(person)
+    elif r <= 50: stateFive(person)
+    elif r <= 95: stateFour(person)
     else: stateEight(person)
 
 def stateSix(person):

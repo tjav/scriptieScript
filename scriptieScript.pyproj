@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4393d4fc-be02-4d46-bcf8-5045550366d5}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>createEvaluationScript.py</StartupFile>
+    <StartupFile>createOrderScript.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -25,19 +25,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="createEvaluationScript.py" />
-    <Compile Include="createOrderScript.py" />
+    <Compile Include="createOrderScript.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="createQuoteScript.py" />
     <Compile Include="createPathsScript.py" />
     <Compile Include="createPeopleScript.py" />
     <Compile Include="dataScript.py" />
     <Compile Include="evaluationScript.py" />
     <Compile Include="eventlogScript.py" />
+    <Compile Include="findLoyalPersonScript.py" />
     <Compile Include="issuesScript.py" />
+    <Compile Include="loyalPersonScript.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="orderScript.py" />
     <Compile Include="personScript.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="InputCSV\" />
     <Folder Include="OutputCSV\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InputCSV\company.csv" />
+    <Content Include="InputCSV\firstnames.csv" />
+    <Content Include="InputCSV\lastnames.csv" />
   </ItemGroup>
   <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
