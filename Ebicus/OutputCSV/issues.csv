@@ -1,0 +1,49 @@
+rowNumber,PersonId,Solved,State 
+1,35,Solved,s8
+2,82,Not Solved,s8
+3,131,Solved,s8
+4,167,Solved,s8
+5,198,Not Solved,s8
+6,211,Not Solved,s8
+7,247,Not Solved,s8
+8,261,Not Solved,s8
+9,316,Not Solved,s8
+10,353,Not Solved,s8
+11,360,Not Solved,s8
+12,362,Not Solved,s8
+13,370,Solved,s8
+14,376,Solved,s8
+15,402,Not Solved,s8
+16,422,Solved,s8
+17,450,Solved,s8
+18,478,Solved,s8
+19,495,Solved,s8
+20,511,Not Solved,s8
+21,525,Solved,s8
+22,549,Solved,s8
+23,552,Solved,s8
+24,569,Not Solved,s8
+25,573,Not Solved,s8
+26,638,Solved,s8
+27,638,Solved,s8
+28,666,Solved,s8
+29,675,Solved,s8
+30,678,Not Solved,s8
+31,703,Not Solved,s8
+32,719,Solved,s8
+33,724,Not Solved,s8
+34,755,Solved,s8
+35,768,Solved,s8
+36,794,Solved,s8
+37,799,Not Solved,s8
+38,800,Solved,s8
+39,800,Solved,s8
+40,803,Not Solved,s8
+41,821,Solved,s8
+42,868,Not Solved,s8
+43,884,Not Solved,s8
+44,897,Solved,s8
+45,897,Solved,s8
+46,897,Not Solved,s8
+47,917,Solved,s8
+48,966,Solved,s8

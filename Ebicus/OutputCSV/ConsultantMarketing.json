@@ -1,0 +1,17 @@
+{ "links" : [ 
+{"source": "Awareness","target": "End","value":"61.0"}, 
+{"source": "Awareness","target": "Evaluation","value":"41.0"}, 
+{"source": "Evaluation","target": "End","value":"25.0"}, 
+{"source": "Evaluation","target": "Purchase","value":"16.0"}, 
+{"source": "Purchase","target": "Use","value":"16.0"}, 
+{"source": "Use","target": "End","value":"9.0"}, 
+{"source": "Use","target": "Advocate","value":"7.0"}, 
+{"source": "Advocate","target": "End","value":"7.0"} 
+ 
+], "nodes" : [ 
+ {"name":"Awareness"}, 
+ {"name":"Evaluation"}, 
+ {"name":"Purchase"}, 
+ {"name":"Use"}, 
+ {"name":"Advocate"}, 
+ {"name":"End"} ] }

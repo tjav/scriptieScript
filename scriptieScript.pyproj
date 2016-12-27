@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4393d4fc-be02-4d46-bcf8-5045550366d5}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>createEvaluationScript.py</StartupFile>
+    <StartupFile>Ebicus\csvtoJson.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -24,32 +24,156 @@
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.4" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="createEvaluationScript.py" />
-    <Compile Include="createOrderScript.py">
+    <Compile Include="BookFlight1\createEvaluationScript.py" />
+    <Compile Include="BookFlight1\createOrderScript.py" />
+    <Compile Include="BookFlight1\createPathsScript.py" />
+    <Compile Include="BookFlight1\createPeopleScript.py" />
+    <Compile Include="BookFlight1\createQuoteScript.py" />
+    <Compile Include="BookFlight1\csvtoJson.py" />
+    <Compile Include="BookFlight1\csvtojsonscript.py" />
+    <Compile Include="BookFlight1\dataScript.py" />
+    <Compile Include="BookFlight1\evaluationScript.py" />
+    <Compile Include="BookFlight1\eventlogScript.py" />
+    <Compile Include="BookFlight1\findLoyalPersonScript.py" />
+    <Compile Include="BookFlight1\issuesScript.py" />
+    <Compile Include="BookFlight1\loyalPersonScript.py" />
+    <Compile Include="BookFlight1\orderScript.py" />
+    <Compile Include="BookFlight1\personScript.py" />
+    <Compile Include="ComputerHelp\createPathsScript.py" />
+    <Compile Include="ComputerHelp\createPeopleScript.py" />
+    <Compile Include="ComputerHelp\csvtoJson.py" />
+    <Compile Include="ComputerHelp\dataScript.py" />
+    <Compile Include="ComputerHelp\NPS.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="createQuoteScript.py" />
-    <Compile Include="createPathsScript.py" />
-    <Compile Include="createPeopleScript.py" />
-    <Compile Include="dataScript.py" />
-    <Compile Include="evaluationScript.py" />
-    <Compile Include="eventlogScript.py" />
-    <Compile Include="findLoyalPersonScript.py" />
-    <Compile Include="issuesScript.py" />
-    <Compile Include="loyalPersonScript.py">
+    <Compile Include="ComputerHelp\personScript.py" />
+    <Compile Include="Ebicus\createPathsScript.py" />
+    <Compile Include="Ebicus\createPeopleScript.py" />
+    <Compile Include="Ebicus\csvtoJson.py" />
+    <Compile Include="Ebicus\dataScript.py" />
+    <Compile Include="Ebicus\NPS.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="orderScript.py" />
-    <Compile Include="personScript.py" />
+    <Compile Include="Ebicus\personScript.py" />
+    <Compile Include="Hire a Book\createPathsScript.py" />
+    <Compile Include="Hire a Book\createPeopleScript.py" />
+    <Compile Include="Hire a Book\csvtoJson.py" />
+    <Compile Include="Hire a Book\dataScript.py" />
+    <Compile Include="Hire a Book\NPS.py" />
+    <Compile Include="Hire a Book\personScript.py" />
+    <Compile Include="Rent a Car\createPathsScript.py" />
+    <Compile Include="Rent a Car\createPeopleScript.py" />
+    <Compile Include="Rent a Car\csvtoJson.py" />
+    <Compile Include="Rent a Car\dataScript.py" />
+    <Compile Include="Rent a Car\personScript.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="InputCSV\" />
-    <Folder Include="OutputCSV\" />
+    <Folder Include="BookFlight1\" />
+    <Folder Include="BookFlight1\InputCSV\" />
+    <Folder Include="BookFlight1\OutputCSV\" />
+    <Folder Include="BookFlight1\OutputCSV\OutputXLS\" />
+    <Folder Include="BookFlight1\OutputCSV\previous output\" />
+    <Folder Include="ComputerHelp\" />
+    <Folder Include="ComputerHelp\InputCSV\" />
+    <Folder Include="ComputerHelp\OutputCSV\" />
+    <Folder Include="ComputerHelp\__pycache__\" />
+    <Folder Include="Ebicus\" />
+    <Folder Include="Ebicus\InputCSV\" />
+    <Folder Include="Ebicus\OutputCSV\" />
+    <Folder Include="Ebicus\__pycache__\" />
+    <Folder Include="Hire a Book\" />
+    <Folder Include="Hire a Book\InputCSV\" />
+    <Folder Include="Hire a Book\OutputCSV\" />
+    <Folder Include="Rent a Car\" />
+    <Folder Include="Rent a Car\InputCSV\" />
+    <Folder Include="Rent a Car\OutputCSV\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="InputCSV\company.csv" />
-    <Content Include="InputCSV\firstnames.csv" />
-    <Content Include="InputCSV\lastnames.csv" />
+    <Content Include="BookFlight1\InputCSV\company.csv" />
+    <Content Include="BookFlight1\InputCSV\firstnames.csv" />
+    <Content Include="BookFlight1\InputCSV\lastnames.csv" />
+    <Content Include="BookFlight1\OutputCSV\data.json" />
+    <Content Include="BookFlight1\OutputCSV\data.txt" />
+    <Content Include="BookFlight1\OutputCSV\evaluation.csv" />
+    <Content Include="BookFlight1\OutputCSV\evaluation.txt" />
+    <Content Include="BookFlight1\OutputCSV\eventlog.csv" />
+    <Content Include="BookFlight1\OutputCSV\eventlog.txt" />
+    <Content Include="BookFlight1\OutputCSV\issues.csv" />
+    <Content Include="BookFlight1\OutputCSV\issues.txt" />
+    <Content Include="BookFlight1\OutputCSV\loyal.csv" />
+    <Content Include="BookFlight1\OutputCSV\loyal.txt" />
+    <Content Include="BookFlight1\OutputCSV\OutputXLS\Channels.xlsx" />
+    <Content Include="BookFlight1\OutputCSV\OutputXLS\Evaluations.xlsx" />
+    <Content Include="BookFlight1\OutputCSV\OutputXLS\eventlogs.csv" />
+    <Content Include="BookFlight1\OutputCSV\OutputXLS\Eventlogs.xlsx" />
+    <Content Include="BookFlight1\OutputCSV\OutputXLS\Issues.xlsx" />
+    <Content Include="BookFlight1\OutputCSV\OutputXLS\Loyal Persons.xlsx" />
+    <Content Include="BookFlight1\OutputCSV\OutputXLS\Orders.xlsx" />
+    <Content Include="BookFlight1\OutputCSV\OutputXLS\Persons.xlsx" />
+    <Content Include="BookFlight1\OutputCSV\OutputXLS\Quotes.xlsx" />
+    <Content Include="BookFlight1\OutputCSV\OutputXLS\States.xlsx" />
+    <Content Include="BookFlight1\OutputCSV\persons.csv" />
+    <Content Include="BookFlight1\OutputCSV\previous output\data.json" />
+    <Content Include="BookFlight1\OutputCSV\previous output\evaluations.csv" />
+    <Content Include="BookFlight1\OutputCSV\previous output\eventlogs.csv" />
+    <Content Include="BookFlight1\OutputCSV\previous output\issues.csv" />
+    <Content Include="BookFlight1\OutputCSV\previous output\loyalpersons.csv" />
+    <Content Include="BookFlight1\OutputCSV\previous output\Nieuw tekstdocument.txt" />
+    <Content Include="BookFlight1\OutputCSV\previous output\orders.csv" />
+    <Content Include="BookFlight1\OutputCSV\previous output\persons.csv" />
+    <Content Include="BookFlight1\OutputCSV\previous output\quotes.csv" />
+    <Content Include="BookFlight1\OutputCSV\quote.csv" />
+    <Content Include="BookFlight1\OutputCSV\quote.txt" />
+    <Content Include="BookFlight1\OutputCSV\revenue.csv" />
+    <Content Include="BookFlight1\OutputCSV\revenue.txt" />
+    <Content Include="ComputerHelp\InputCSV\company.csv" />
+    <Content Include="ComputerHelp\InputCSV\firstnames.csv" />
+    <Content Include="ComputerHelp\InputCSV\lastnames.csv" />
+    <Content Include="ComputerHelp\OutputCSV\CARRental.json" />
+    <Content Include="ComputerHelp\OutputCSV\CARRentalCompany.json" />
+    <Content Include="ComputerHelp\OutputCSV\CARRentalFemale.json" />
+    <Content Include="ComputerHelp\OutputCSV\CARRentalLoyal.json" />
+    <Content Include="ComputerHelp\OutputCSV\CARRentalLoyal2.json" />
+    <Content Include="ComputerHelp\OutputCSV\CARRentalMale.json" />
+    <Content Include="ComputerHelp\OutputCSV\CARRentalYoung.json" />
+    <Content Include="ComputerHelp\OutputCSV\data.json" />
+    <Content Include="ComputerHelp\OutputCSV\evaluation.csv" />
+    <Content Include="ComputerHelp\OutputCSV\eventlog.csv" />
+    <Content Include="ComputerHelp\OutputCSV\issues.csv" />
+    <Content Include="ComputerHelp\OutputCSV\loyal.csv" />
+    <Content Include="ComputerHelp\OutputCSV\persons.csv" />
+    <Content Include="ComputerHelp\OutputCSV\quote.csv" />
+    <Content Include="ComputerHelp\OutputCSV\revenue.csv" />
+    <Content Include="ComputerHelp\__pycache__\createPeopleScript.cpython-34.pyc" />
+    <Content Include="ComputerHelp\__pycache__\dataScript.cpython-34.pyc" />
+    <Content Include="ComputerHelp\__pycache__\personScript.cpython-34.pyc" />
+    <Content Include="Ebicus\InputCSV\company.csv" />
+    <Content Include="Ebicus\InputCSV\firstnames.csv" />
+    <Content Include="Ebicus\InputCSV\lastnames.csv" />
+    <Content Include="Ebicus\OutputCSV\CARRental.json" />
+    <Content Include="Ebicus\OutputCSV\CARRentalCompany.json" />
+    <Content Include="Ebicus\OutputCSV\CARRentalFemale.json" />
+    <Content Include="Ebicus\OutputCSV\CARRentalLoyal.json" />
+    <Content Include="Ebicus\OutputCSV\CARRentalLoyal2.json" />
+    <Content Include="Ebicus\OutputCSV\CARRentalMale.json" />
+    <Content Include="Ebicus\OutputCSV\CARRentalYoung.json" />
+    <Content Include="Ebicus\OutputCSV\data.json" />
+    <Content Include="Ebicus\OutputCSV\evaluation.csv" />
+    <Content Include="Ebicus\OutputCSV\eventlog.csv" />
+    <Content Include="Ebicus\OutputCSV\issues.csv" />
+    <Content Include="Ebicus\OutputCSV\loyal.csv" />
+    <Content Include="Ebicus\OutputCSV\persons.csv" />
+    <Content Include="Ebicus\OutputCSV\quote.csv" />
+    <Content Include="Ebicus\OutputCSV\revenue.csv" />
+    <Content Include="Ebicus\__pycache__\createPeopleScript.cpython-34.pyc" />
+    <Content Include="Ebicus\__pycache__\dataScript.cpython-34.pyc" />
+    <Content Include="Ebicus\__pycache__\personScript.cpython-34.pyc" />
+    <Content Include="Hire a Book\InputCSV\company.csv" />
+    <Content Include="Hire a Book\InputCSV\firstnames.csv" />
+    <Content Include="Hire a Book\InputCSV\lastnames.csv" />
+    <Content Include="Rent a Car\InputCSV\company.csv" />
+    <Content Include="Rent a Car\InputCSV\firstnames.csv" />
+    <Content Include="Rent a Car\InputCSV\lastnames.csv" />
   </ItemGroup>
   <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
