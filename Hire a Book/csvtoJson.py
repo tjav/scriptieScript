@@ -18,19 +18,19 @@ ua = 0
 adn = 0
 
 def writeJson(jsonText):
-    file = open('C:/Users/Tim/Documents/GitHub/scriptieScript/Ebicus/OutputCSV/ConsultantBISweden.json', 'w')
+    file = open('C:/Users/Tim/Documents/GitHub/scriptieScript/Hire a Book/OutputCSV/Bookmembersm25.json', 'w')
     file.write(jsonText)
     file.close()
 
 def addLinks():
    global an, ae, en, ep, pn, pa, pu, un, ua, adn
-   #en = ae-ep
+   en = ae-ep
    text = '{"source": "Awareness","target": "End","value":"'+ str(an) +'.0"}, \n'
    text = text + '{"source": "Awareness","target": "Evaluation","value":"'+ str(ae) +'.0"}, \n'
    text = text + '{"source": "Evaluation","target": "End","value":"'+ str(en) +'.0"}, \n'
    text = text + '{"source": "Evaluation","target": "Purchase","value":"'+ str(ep) +'.0"}, \n'
-  # text = text + '{"source": "Purchase","target": "End","value":"'+ str(pn) +'.0"}, \n'
-  # text = text + '{"source": "Purchase","target": "Advocate","value":"'+ str(pa) +'.0"}, \n'
+   text = text + '{"source": "Purchase","target": "End","value":"'+ str(pn) +'.0"}, \n'
+   text = text + '{"source": "Purchase","target": "Advocate","value":"'+ str(pa) +'.0"}, \n'
    text = text + '{"source": "Purchase","target": "Use","value":"'+ str(pu) +'.0"}, \n'
    text = text + '{"source": "Use","target": "End","value":"'+ str(un) +'.0"}, \n'
    text = text + '{"source": "Use","target": "Advocate","value":"'+ str(ua) +'.0"}, \n'
@@ -54,22 +54,18 @@ def findLink(person,state):
             target = '"End"'
         elif (state == 's1'):
             target = '"Awareness"'
-        elif (state == 's2' or state == 's3'):
+        elif (state == 's2'):
             if( source == '"Use"'):
                 target = '"Advocate"'
             else:
                 target = '"Awareness"'
-        elif (state == 's5'):
+        elif (state == 's5' or state == 's4'):
             target = '"Evaluation"'
-        elif state == 's4':
-            if source == '"Use"':
-                target = '"Advocate"'
-            else: target = '"Evaluation"'
         elif (state == "s6"):
             target = '"Purchase"'
-        elif ( state == "s7" or state == "s8" or state == "s9" ):
+        elif ( state == "s7" or state == "s8" or state == "s9" or state == 's10'):
             target = '"Use"'
-        elif (state == "s10"):
+        elif (state == "s11"):
             target = '"End"'
         
 
@@ -111,27 +107,35 @@ def findLink(person,state):
 filter1=[]
 filter2=[]
 
-with open('C:/Users/Tim/Documents/GitHub/scriptieScript/Ebicus/OutputCSV/persons.csv', newline='') as csvfile:
+#first filter
+with open('C:/Users/Tim/Documents/GitHub/scriptieScript/Hire a Book/OutputCSV/persons.csv', newline='') as csvfile:
        spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
        for row in spamreader:
            if len(row):
-               if row[5] == 'se':
+               if row[4] == 'male' and int(row[6]) <= 25:
                 filter1.append(row[0])
 
-with open('C:/Users/Tim/Documents/GitHub/scriptieScript/Ebicus/OutputCSV/eventlog.csv', newline='') as csvfile:
-       spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-       for row in spamreader:
-           if len(row):
-               if row[4] == 'BI':
-                filter2.append(row[0])
 
+# second filter
+#with open('C:/Users/Tim/Documents/GitHub/scriptieScript/Hire a Book/OutputCSV/eventlog.csv', newline='') as csvfile:
+#       spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+#       for row in spamreader:
+#           if len(row):
+#               if row[4] == 'BI':
+#                filter2.append(row[0])
+
+#compare filters
 for i in filter1:
-    for j in filter2:
-        if i == j:
+#    for j in filter2:
+#        if i == j:
             filter.append(i)
 
-filterrunner = -1
-with open('C:/Users/Tim/Documents/GitHub/scriptieScript/Ebicus/OutputCSV/eventlog.csv', newline='') as csvfile:
+#For all the persons
+#for i in range(0,99999):
+#    filter.append(str(i))
+
+filterrunner = 0
+with open('C:/Users/Tim/Documents/GitHub/scriptieScript/Hire a Book/OutputCSV/eventlog.csv', newline='') as csvfile:
    spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
    for row in spamreader:
         if len(row):

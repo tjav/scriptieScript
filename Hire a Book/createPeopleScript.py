@@ -29,11 +29,11 @@ def makePeople(number):
         if not c:
            c = 'NULL'
         persons.append(Person(each, f + " " + l, f + "." + l + e ,c,giveRandom(gender),giveRandom(locations), a))
-makePeople(1000)
+makePeople(100000)
 print (len(persons))
 
 ## evaluations to csv
-wcsv = csv.writer(open("C:/Users/Tim/Documents/GitHub/scriptieScript/Ebicus/OutputCSV/persons.csv","w"), delimiter='\n',quoting=csv.QUOTE_MINIMAL)
+wcsv = csv.writer(open("C:/Users/Tim/Documents/GitHub/scriptieScript/Hire a Book/OutputCSV/persons.csv","w"), delimiter='\n',quoting=csv.QUOTE_MINIMAL)
 wcsv.writerow(persons)
 
 

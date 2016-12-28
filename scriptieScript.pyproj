@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4393d4fc-be02-4d46-bcf8-5045550366d5}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>Ebicus\csvtoJson.py</StartupFile>
+    <StartupFile>Hire a Book\csvtoJson.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
