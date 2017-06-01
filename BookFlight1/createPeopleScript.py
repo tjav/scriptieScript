@@ -25,15 +25,16 @@ def makePeople(number):
         l = giveRandom(lastnames)
         e = giveRandom(emails)
         c = compRandom(companies)
+        a = random.randint(18,80)
         if not c:
             c = 'NULL'
-        persons.append(Person(each, f + " " + l, f + "." + l + e ,c,giveRandom(gender),giveRandom(locations)))
+        persons.append(Person(each, f + " " + l, f + "." + l + e ,c,giveRandom(gender),giveRandom(locations), a))
 
 makePeople(100000)
 print (len(persons))
 
 ## evaluations to csv
-wcsv = csv.writer(open("OutputCSV/persons.csv","w"), delimiter='\n',quoting=csv.QUOTE_MINIMAL)
+wcsv = csv.writer(open("C:/Users/Tim/Documents/GitHub/scriptieScript/BookFlight1/OutputCSV/persons.csv","w"), delimiter='\n',quoting=csv.QUOTE_MINIMAL)
 wcsv.writerow(persons)
 
 

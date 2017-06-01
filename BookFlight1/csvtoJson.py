@@ -1,8 +1,7 @@
 import csv
 import json
-from eventlogScript import Eventlog
  
-eventlog = []
+filter = []
 personCounter = -1
 source = " "
 target = " "
@@ -19,7 +18,7 @@ ua = 0
 adn = 0
 
 def writeJson(jsonText):
-    file = open('OutputCSV/data.json', 'w')
+    file = open('C:/Users/Tim/Documents/GitHub/scriptieScript/BookFlight1/OutputCSV/FlightFemale.json', 'w')
     file.write(jsonText)
     file.close()
 
@@ -44,6 +43,9 @@ def findLink(person,state):
     global personCounter
     global source
     global target
+    global filter
+    global filterrunner
+
     global an, ae, en, ep, pn, pa, pu, un, ua, adn
     if (target is not " "):
         source = target
@@ -101,12 +103,43 @@ def findLink(person,state):
         if (state == "s1" or "s2"):
            target = '"Awareness"'
 
-with open('OutputCSV/previous output/eventlogs.csv', newline='') as csvfile:
+filter1=[]
+filter2=[]
+
+with open('C:/Users/Tim/Documents/GitHub/scriptieScript/BookFlight1/OutputCSV/persons.csv', newline='') as csvfile:
+       spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+       for row in spamreader:
+           if len(row):
+               if int(row[0]) <= 50:
+                filter1.append(row[0])
+               else: break
+
+with open('C:/Users/Tim/Documents/GitHub/scriptieScript/BookFlight1/OutputCSV/eventlog.csv', newline='') as csvfile:
+       spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+       for row in spamreader:
+           if len(row):
+               #if row[4] == 'BI':
+                filter2.append(row[1])
+
+for i in filter1:
+    for j in filter2:
+        if i == j:
+            filter.append(i)
+
+filterrunner = -1
+with open('C:/Users/Tim/Documents/GitHub/scriptieScript/BookFlight1/OutputCSV/eventlog.csv', newline='') as csvfile:
    spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
    for row in spamreader:
-       if len(row):
-        findLink(int(row[1]),row[2])
-
+        if len(row):
+            if len(filter):
+                if filter[filterrunner] == row[1]:
+                    findLink(row[1],row[2])
+                else:
+                    try:
+                        if filter[filterrunner + 1] == row[1]:
+                            filterrunner += 1
+                            findLink(row[1],row[2])
+                    except: break
 addLinks()
 
 
