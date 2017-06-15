@@ -5,14 +5,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4393d4fc-be02-4d46-bcf8-5045550366d5}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>BookFlight1\csvtoJson.py</StartupFile>
+    <StartupFile>BookFlight1\csvtoJson1.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
-    <InterpreterVersion>3.4</InterpreterVersion>
+    <InterpreterId>{551ea2a4-f2ca-4ef3-afa0-7731b094ef38}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -21,7 +21,7 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
-    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.4" />
+    <InterpreterReference Include="{551ea2a4-f2ca-4ef3-afa0-7731b094ef38}\3.5" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookFlight1\createEvaluationScript.py" />
@@ -38,6 +38,7 @@
     <Compile Include="BookFlight1\issuesScript.py" />
     <Compile Include="BookFlight1\loyalPersonScript.py" />
     <Compile Include="BookFlight1\orderScript.py" />
+    <Compile Include="BookFlight1\csvtoJson1.py" />
     <Compile Include="BookFlight1\personScript.py" />
     <Compile Include="ComputerHelp\createPathsScript.py" />
     <Compile Include="ComputerHelp\createPeopleScript.py" />

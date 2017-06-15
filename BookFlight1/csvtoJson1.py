@@ -19,11 +19,14 @@ un = 0
 ua = 0
 adn = 0
 
+#create json
+
 def writeJson(jsonText):
-    file = open('OutputCSV/FlightFemale.json', 'w')
+    file = open('C:/Users/tivanbee/Source/Repos/scriptieScript/BookFlight1/OutputCSV/FlightFemale.json', 'w')
     file.write(jsonText)
     file.close()
 
+ #make txt in json format
 def addLinks():
    global an, ae, en, ep, pn, pa, pu, un, ua, adn
    en = ae-ep
@@ -47,7 +50,7 @@ def findLink(person,state):
     global target
     global filter
     global filterrunner
-
+#set target and source
     global an, ae, en, ep, pn, pa, pu, un, ua, adn
     if (target is not " "):
         source = target
@@ -70,7 +73,7 @@ def findLink(person,state):
         elif (state == "s8"):
             target = '"End"'
         
-
+# count link
         if (source is not target):
             if(source == '"Awareness"'):
                 if(target == '"End"'):
@@ -105,43 +108,23 @@ def findLink(person,state):
         if (state == "s1" or "s2"):
            target = '"Awareness"'
 
-filter1=[]
-filter2=[]
 
-with open('C:/Users/tivanbee/Source/Repos/scriptieScript/BookFlight1/OutputCSV/persons.csv', newline='') as csvfile:
-       spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-       for row in spamreader:
-           if len(row):
-               if int(row[0]) <= 50:
-                filter1.append(row[0])
-               else: break
+#load csv to dataframe
+persons = pd.read_csv('C:/Users/tivanbee/Source/Repos/scriptieScript/BookFlight1/OutputCSV/persons.csv', names=['PersonID','Email','Name','Company','Gender','Country','Age'], index_col = 'PersonID') #for setting index to colnumber add , index_col='rownumber'
+events = pd.read_csv('C:/Users/tivanbee/Source/Repos/scriptieScript/BookFlight1/OutputCSV/eventlog.csv', names=['Rownumber','PersonID','State','StateName','LifeCycle','Channel','Loyal','FlightPrice','Upsell','totalPrice','Issue','ScoreName','Score','NPS-score'], index_col = 'Rownumber' ) # for specifying the column names add , names=['name1','name2','etc']
 
-with open('C:/Users/tivanbee/Source/Repos/scriptieScript/BookFlight1/OutputCSV/eventlog.csv', newline='') as csvfile:
-       spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-       for row in spamreader:
-           if len(row):
-               #if row[4] == 'BI':
-                filter2.append(row[1])
+#filter on male for example
+persons_female = persons.filter(like='female' , axis=3) #compares the string 'male' in the 5th column
 
-for i in filter1:
-    for j in filter2:
-        if i == j:
-            filter.append(i)
+#an inner join on the filter
+events_female = pd.merge(events, persons_female, on='PersonID', how='inner')
 
-filterrunner = -1
-with open('C:/Users/tivanbee/Source/Repos/scriptieScript/BookFlight1/OutputCSV/eventlog.csv', newline='') as csvfile:
-   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-   for row in spamreader:
-        if len(row):
-            if len(filter):
-                if filter[filterrunner] == row[1]:
-                    findLink(row[1],row[2])
-                else:
-                    try:
-                        if filter[filterrunner + 1] == row[1]:
-                            filterrunner += 1
-                            findLink(row[1],row[2])
-                    except: break
+#go through the rows
+for i in range(0,100000):
+    event = events_male.filter(like=i, axis='PersonID')
+    for line in event:
+            findLink(line[1],Line[2])
+
 addLinks()
 
 

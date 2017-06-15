@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ProfilingTarget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectTarget>
+    <TargetProject>4393d4fc-be02-4d46-bcf8-5045550366d5</TargetProject>
+    <FriendlyName>scriptieScript</FriendlyName>
+  </ProjectTarget>
+</ProfilingTarget>
