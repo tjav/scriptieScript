@@ -22,7 +22,7 @@ adn = 0
 #create json
 
 def writeJson(jsonText):
-    file = open('C:/Users/tivanbee/Source/Repos/scriptieScript/BookFlight1/OutputCSV/FlightFemale.json', 'w')
+    file = open('C:/Users/tivanbee/Source/Repos/scriptie/scriptieScript/BookFlight1/OutputCSV/FlightFemale.json', 'w')
     file.write(jsonText)
     file.close()
 
@@ -45,7 +45,7 @@ def addLinks():
    
 
 def findLink(person,state):
-    global personCounter
+    global personCounter 
     global source
     global target
     global filter
@@ -110,18 +110,18 @@ def findLink(person,state):
 
 
 #load csv to dataframe
-persons = pd.read_csv('C:/Users/tivanbee/Source/Repos/scriptieScript/BookFlight1/OutputCSV/persons.csv', names=['PersonID','Email','Name','Company','Gender','Country','Age'], index_col = 'PersonID') #for setting index to colnumber add , index_col='rownumber'
-events = pd.read_csv('C:/Users/tivanbee/Source/Repos/scriptieScript/BookFlight1/OutputCSV/eventlog.csv', names=['Rownumber','PersonID','State','StateName','LifeCycle','Channel','Loyal','FlightPrice','Upsell','totalPrice','Issue','ScoreName','Score','NPS-score'], index_col = 'Rownumber' ) # for specifying the column names add , names=['name1','name2','etc']
+persons = pd.read_csv('C:/Users/tivanbee/Source/Repos/scriptie/scriptieScript/BookFlight1/OutputCSV/persons.csv', names=['PersonID','Email','Name','Company','Gender','Country','Age'], index_col = 'PersonID') #for setting index to colnumber add , index_col='rownumber'
+events = pd.read_csv('C:/Users/tivanbee/Source/Repos/scriptie/scriptieScript/BookFlight1/OutputCSV/eventlog.csv', names=['Rownumber','PersonID','State','StateName','LifeCycle','Channel','Loyal','FlightPrice','Upsell','totalPrice','Issue','ScoreName','Score','NPS-score'], index_col = 'Rownumber' ) # for specifying the column names add , names=['name1','name2','etc']
 
 #filter on male for example
-persons_female = persons.filter(like='female' , axis=3) #compares the string 'male' in the 5th column
+persons_female = persons.filter(like='female' , axis=1) #compares the string 'male' in the 5th column
 
 #an inner join on the filter
 events_female = pd.merge(events, persons_female, on='PersonID', how='inner')
 
 #go through the rows
 for i in range(0,100000):
-    event = events_male.filter(like=i, axis='PersonID')
+    event = events_male.filter(like=i, axis=0)
     for line in event:
             findLink(line[1],Line[2])
 

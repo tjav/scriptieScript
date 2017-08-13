@@ -5,23 +5,21 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4393d4fc-be02-4d46-bcf8-5045550366d5}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>BookFlight1\csvtoJson1.py</StartupFile>
+    <StartupFile>BookFlight1\csvtoJson1 - Copy.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <InterpreterId>{551ea2a4-f2ca-4ef3-afa0-7731b094ef38}</InterpreterId>
-    <InterpreterVersion>3.5</InterpreterVersion>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <PropertyGroup>
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
-    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
-    <InterpreterReference Include="{551ea2a4-f2ca-4ef3-afa0-7731b094ef38}\3.5" />
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookFlight1\createEvaluationScript.py" />
@@ -30,6 +28,7 @@
     <Compile Include="BookFlight1\createPeopleScript.py" />
     <Compile Include="BookFlight1\createQuoteScript.py" />
     <Compile Include="BookFlight1\csvtoJson.py" />
+    <Compile Include="BookFlight1\csvtoJson1 - Copy.py" />
     <Compile Include="BookFlight1\csvtojsonscript.py" />
     <Compile Include="BookFlight1\dataScript.py" />
     <Compile Include="BookFlight1\evaluationScript.py" />
@@ -40,14 +39,6 @@
     <Compile Include="BookFlight1\orderScript.py" />
     <Compile Include="BookFlight1\csvtoJson1.py" />
     <Compile Include="BookFlight1\personScript.py" />
-    <Compile Include="ComputerHelp\createPathsScript.py" />
-    <Compile Include="ComputerHelp\createPeopleScript.py" />
-    <Compile Include="ComputerHelp\csvtoJson.py" />
-    <Compile Include="ComputerHelp\dataScript.py" />
-    <Compile Include="ComputerHelp\NPS.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ComputerHelp\personScript.py" />
     <Compile Include="Ebicus\createPathsScript.py" />
     <Compile Include="Ebicus\createPeopleScript.py" />
     <Compile Include="Ebicus\csvtoJson.py" />
@@ -62,11 +53,6 @@
     <Compile Include="Hire a Book\dataScript.py" />
     <Compile Include="Hire a Book\NPS.py" />
     <Compile Include="Hire a Book\personScript.py" />
-    <Compile Include="Rent a Car\createPathsScript.py" />
-    <Compile Include="Rent a Car\createPeopleScript.py" />
-    <Compile Include="Rent a Car\csvtoJson.py" />
-    <Compile Include="Rent a Car\dataScript.py" />
-    <Compile Include="Rent a Car\personScript.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BookFlight1\" />
@@ -74,10 +60,6 @@
     <Folder Include="BookFlight1\OutputCSV\" />
     <Folder Include="BookFlight1\OutputCSV\OutputXLS\" />
     <Folder Include="BookFlight1\OutputCSV\previous output\" />
-    <Folder Include="ComputerHelp\" />
-    <Folder Include="ComputerHelp\InputCSV\" />
-    <Folder Include="ComputerHelp\OutputCSV\" />
-    <Folder Include="ComputerHelp\__pycache__\" />
     <Folder Include="Ebicus\" />
     <Folder Include="Ebicus\InputCSV\" />
     <Folder Include="Ebicus\OutputCSV\" />
@@ -85,9 +67,6 @@
     <Folder Include="Hire a Book\" />
     <Folder Include="Hire a Book\InputCSV\" />
     <Folder Include="Hire a Book\OutputCSV\" />
-    <Folder Include="Rent a Car\" />
-    <Folder Include="Rent a Car\InputCSV\" />
-    <Folder Include="Rent a Car\OutputCSV\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BookFlight1\InputCSV\company.csv" />
@@ -127,27 +106,6 @@
     <Content Include="BookFlight1\OutputCSV\quote.txt" />
     <Content Include="BookFlight1\OutputCSV\revenue.csv" />
     <Content Include="BookFlight1\OutputCSV\revenue.txt" />
-    <Content Include="ComputerHelp\InputCSV\company.csv" />
-    <Content Include="ComputerHelp\InputCSV\firstnames.csv" />
-    <Content Include="ComputerHelp\InputCSV\lastnames.csv" />
-    <Content Include="ComputerHelp\OutputCSV\CARRental.json" />
-    <Content Include="ComputerHelp\OutputCSV\CARRentalCompany.json" />
-    <Content Include="ComputerHelp\OutputCSV\CARRentalFemale.json" />
-    <Content Include="ComputerHelp\OutputCSV\CARRentalLoyal.json" />
-    <Content Include="ComputerHelp\OutputCSV\CARRentalLoyal2.json" />
-    <Content Include="ComputerHelp\OutputCSV\CARRentalMale.json" />
-    <Content Include="ComputerHelp\OutputCSV\CARRentalYoung.json" />
-    <Content Include="ComputerHelp\OutputCSV\data.json" />
-    <Content Include="ComputerHelp\OutputCSV\evaluation.csv" />
-    <Content Include="ComputerHelp\OutputCSV\eventlog.csv" />
-    <Content Include="ComputerHelp\OutputCSV\issues.csv" />
-    <Content Include="ComputerHelp\OutputCSV\loyal.csv" />
-    <Content Include="ComputerHelp\OutputCSV\persons.csv" />
-    <Content Include="ComputerHelp\OutputCSV\quote.csv" />
-    <Content Include="ComputerHelp\OutputCSV\revenue.csv" />
-    <Content Include="ComputerHelp\__pycache__\createPeopleScript.cpython-34.pyc" />
-    <Content Include="ComputerHelp\__pycache__\dataScript.cpython-34.pyc" />
-    <Content Include="ComputerHelp\__pycache__\personScript.cpython-34.pyc" />
     <Content Include="Ebicus\InputCSV\company.csv" />
     <Content Include="Ebicus\InputCSV\firstnames.csv" />
     <Content Include="Ebicus\InputCSV\lastnames.csv" />
@@ -172,10 +130,6 @@
     <Content Include="Hire a Book\InputCSV\company.csv" />
     <Content Include="Hire a Book\InputCSV\firstnames.csv" />
     <Content Include="Hire a Book\InputCSV\lastnames.csv" />
-    <Content Include="Rent a Car\InputCSV\company.csv" />
-    <Content Include="Rent a Car\InputCSV\firstnames.csv" />
-    <Content Include="Rent a Car\InputCSV\lastnames.csv" />
   </ItemGroup>
-  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>

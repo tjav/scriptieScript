@@ -1,0 +1,23 @@
+{
+    "links": [
+        { "source": "Awareness", "target": "End", "value": "6799.0" },
+        { "source": "Awareness", "target": "Evaluation", "value": "5604.0" },
+        { "source": "Evaluation", "target": "End", "value": "3557.0" },
+        { "source": "Evaluation", "target": "Purchase", "value": "2047.0" },
+        { "source": "Purchase", "target": "End", "value": "87.0" },
+        { "source": "Purchase", "target": "Advocate", "value": "105.0" },
+        { "source": "Purchase", "target": "Use", "value": "1855.0" },
+        { "source": "Use", "target": "End", "value": "1273.0" },
+        { "source": "Use", "target": "Advocate", "value": "582.0" },
+        { "source": "Advocate", "target": "End", "value": "687.0" }
+
+    ],
+    "nodes": [
+        { "name": "Awareness" },
+        { "name": "Evaluation" },
+        { "name": "Purchase" },
+        { "name": "Use" },
+        { "name": "Advocate" },
+        { "name": "End" }
+    ]
+}
